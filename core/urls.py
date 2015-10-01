@@ -11,5 +11,8 @@ urlpatterns = patterns('',
 
 url(r'^question/(?P<pk>\d+)/$', QuestionDetailView.as_view(), name='question_detail'),
 
+url(r'^question/update/(?P<pk>\d+)/$', QuestionUpdateView.as_view(), name='question_update'),
+
+
 
 )
