@@ -13,6 +13,9 @@ url(r'^question/(?P<pk>\d+)/$', QuestionDetailView.as_view(), name='question_det
 
 url(r'^question/update/(?P<pk>\d+)/$', QuestionUpdateView.as_view(), name='question_update'),
 
+    url(r'^question/delete/(?P<pk>\d+)/$', QuestionDeleteView.as_view(), name='question_delete'),
+
+
 
 
 )
